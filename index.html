@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoApp - Test Permiso B</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-illustration" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand__logo" aria-hidden="true">🚗</span>
+        <span class="brand__name">AutoApp</span>
+      </div>
+      <div class="topbar__actions">
+        <span id="userDisplay" class="user-badge hidden" aria-live="polite"></span>
+        <button id="logoutButton" class="ghost-button hidden" type="button">Cerrar sesión</button>
+      </div>
+    </header>
+
+    <main class="app-layout">
+      <section id="authSection" class="auth-card" aria-labelledby="authTitle">
+        <div class="auth-card__header">
+          <p class="eyebrow">Bienvenido</p>
+          <h1 id="authTitle">Tu camino hacia el carnet B</h1>
+          <p>
+            Inicia sesión para guardar tu progreso, desbloquear los tests y retomar tus
+            avances desde cualquier dispositivo.
+          </p>
+        </div>
+        <form id="loginForm" class="auth-form">
+          <label class="form-label" for="loginEmail">Usuario o correo</label>
+          <input
+            id="loginEmail"
+            class="form-input"
+            type="text"
+            name="username"
+            placeholder="user"
+            autocomplete="username"
+            required
+          />
+          <label class="form-label" for="loginPassword">Contraseña</label>
+          <input
+            id="loginPassword"
+            class="form-input"
+            type="password"
+            name="password"
+            placeholder="Introduce tu contraseña"
+            autocomplete="current-password"
+            required
+          />
+          <button id="loginButton" class="primary-button" type="submit">Acceder</button>
+        </form>
+        <p class="helper-text">Demo disponible: usuario <strong>user</strong> · contraseña <strong>user</strong></p>
+        <p id="authError" class="feedback" role="alert"></p>
+      </section>
+
+      <section id="dashboardSection" class="dashboard hidden" aria-live="polite">
+        <div class="dashboard__hero">
+          <div class="dashboard__hero-copy">
+            <p class="eyebrow">Permiso B</p>
+            <h1>Practica, aprende y aprueba a tu ritmo</h1>
+            <p>
+              Accede a packs de 30 preguntas cuidadosamente seleccionadas. Tu progreso se guarda
+              automáticamente para que puedas continuar justo donde lo dejaste.
+            </p>
+            <div class="hero-actions">
+              <button id="openLicenseB" class="primary-button" type="button">Explorar tests del permiso B</button>
+            </div>
+          </div>
+          <div class="dashboard__hero-stats" role="presentation">
+            <div class="metric-card metric-card--compact">
+              <span class="metric-label">Tests aprobados</span>
+              <strong id="heroCompleted" class="metric-value">0</strong>
+            </div>
+            <div class="metric-card metric-card--compact">
+              <span class="metric-label">Último resultado</span>
+              <strong id="heroLastResult" class="metric-value">—</strong>
+            </div>
+          </div>
+        </div>
+
+        <section class="welcome-strip" aria-live="polite">
+          <p>Hola, <span id="dashboardUserName">piloto</span>. Selecciona un permiso para comenzar.</p>
+        </section>
+
+        <section class="license-grid" aria-label="Permisos disponibles">
+          <article class="license-card">
+            <div class="license-card__badge">Permiso B</div>
+            <h2>Turismos y vehículos ligeros</h2>
+            <p>Ideal para principiantes: señalización, normativa, seguridad y conducción eficiente.</p>
+            <button id="licenseBButton" class="ghost-button ghost-button--bold" type="button">
+              Ver tests disponibles
+            </button>
+          </article>
+          <article class="license-card license-card--disabled" aria-disabled="true">
+            <div class="license-card__badge">Próximamente</div>
+            <h2>Otros permisos</h2>
+            <p>Estamos trabajando en ampliar la plataforma a permisos A, C, D y mucho más.</p>
+          </article>
+        </section>
+
+        <section id="packsSection" class="packs-section hidden" aria-labelledby="packsTitle">
+          <header class="section-heading">
+            <div>
+              <p class="eyebrow">Permiso B</p>
+              <h2 id="packsTitle">Tests disponibles</h2>
+            </div>
+            <p id="packListFeedback" class="feedback" role="alert"></p>
+          </header>
+          <p class="section-subtitle">
+            Cada test incluye 30 preguntas. Necesitas al menos 3 aciertos para aprobar este MVP.
+          </p>
+          <div class="status-legend" aria-label="Leyenda de estados">
+            <span><span class="legend-dot legend-dot--pending" aria-hidden="true"></span> Sin intentos</span>
+            <span><span class="legend-dot legend-dot--pass" aria-hidden="true"></span> Aprobado</span>
+            <span><span class="legend-dot legend-dot--fail" aria-hidden="true"></span> Suspendido</span>
+          </div>
+          <div id="packList" class="pack-list" role="list"></div>
+        </section>
+
+        <section id="testSection" class="panel hidden" aria-live="polite">
+          <header class="panel__header">
+            <div>
+              <p class="eyebrow">Test en progreso</p>
+              <h2 id="packTitle"></h2>
+            </div>
+            <div class="panel__indicators">
+              <span id="questionCounter" class="indicator"></span>
+              <span id="scoreTracker" class="indicator indicator--neutral"></span>
+            </div>
+          </header>
+          <article class="question-card">
+            <h3 id="questionText"></h3>
+            <form id="optionsForm" class="options-grid"></form>
+          </article>
+          <p id="questionFeedback" class="feedback" role="alert"></p>
+          <div class="controls">
+            <button id="previousButton" class="ghost-button" type="button">Anterior</button>
+            <button id="nextButton" class="primary-button" type="button">Siguiente</button>
+          </div>
+        </section>
+
+        <section id="resultsSection" class="panel hidden" aria-live="polite">
+          <header class="panel__header">
+            <div>
+              <p class="eyebrow">Resumen</p>
+              <h2>Resultados del test</h2>
+            </div>
+            <span id="resultsStatus" class="status-chip"></span>
+          </header>
+          <p id="resultsSummary" class="section-subtitle"></p>
+          <div class="metrics metrics--balanced">
+            <div class="metric-card">
+              <span class="metric-label">Aciertos totales</span>
+              <strong id="resultsScore" class="metric-value">0</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Preguntas respondidas</span>
+              <strong id="resultsAnswered" class="metric-value">0</strong>
+            </div>
+          </div>
+          <details class="results-details">
+            <summary>Ver detalle pregunta a pregunta</summary>
+            <ol id="resultsList" class="results-list"></ol>
+          </details>
+          <div class="results-actions">
+            <button id="restartButton" class="ghost-button ghost-button--bold" type="button">
+              Volver al listado
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <small>AutoApp &mdash; Simulador de autoescuela para el permiso B</small>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
