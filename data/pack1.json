@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "id": "pack1",
+    "title": "Fundamentos del permiso B",
+    "description": "Preguntas introductorias sobre normativa, señalización y seguridad vial"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Cuál es la velocidad máxima permitida para un turismo en autopista en España, salvo señalización específica?",
+      "options": ["100 km/h", "120 km/h", "130 km/h", "140 km/h"],
+      "correctOption": 1,
+      "explanation": "La velocidad genérica para turismos en autopista y autovía es de 120 km/h, salvo que exista señalización que indique otro límite."
+    },
+    {
+      "id": 2,
+      "question": "En una vía urbana con un carril por sentido, ¿cuál es el límite genérico de velocidad desde 2021?",
+      "options": ["30 km/h", "40 km/h", "50 km/h", "60 km/h"],
+      "correctOption": 0,
+      "explanation": "Desde mayo de 2021, el límite genérico en vías urbanas de un solo carril por sentido es de 30 km/h para mejorar la seguridad vial."
+    },
+    {
+      "id": 3,
+      "question": "Una señal triangular con borde rojo y la silueta de un ciervo indica…",
+      "options": ["Vía reservada a animales", "Prohibición de paso de animales", "Peligro por paso frecuente de animales", "Zona protegida de fauna"],
+      "correctOption": 2,
+      "explanation": "Se trata de una señal de peligro que advierte de la posible presencia y cruce de animales en libertad en la calzada."
+    },
+    {
+      "id": 4,
+      "question": "¿Cuándo es obligatorio circular con las luces de cruce encendidas?",
+      "options": ["Solo de noche en carreteras interurbanas", "De noche, en túneles y en carriles reversibles", "Únicamente cuando llueve intensamente", "En cualquier momento dentro de poblado"],
+      "correctOption": 1,
+      "explanation": "Las luces de cruce son obligatorias durante la noche, en túneles o pasos inferiores, carriles reversibles y cuando la visibilidad sea reducida."
+    },
+    {
+      "id": 5,
+      "question": "¿Cuál es la profundidad mínima legal del dibujo de los neumáticos en turismos?",
+      "options": ["0,8 mm", "1,0 mm", "1,6 mm", "2,0 mm"],
+      "correctOption": 2,
+      "explanation": "La normativa exige que el dibujo de los neumáticos tenga al menos 1,6 mm de profundidad para garantizar la adherencia."
+    },
+    {
+      "id": 6,
+      "question": "Al llegar a una glorieta, ¿quién tiene prioridad de paso?",
+      "options": ["El vehículo que llega por la derecha", "Los vehículos que circulan dentro de la glorieta", "El vehículo más rápido", "El vehículo que pretende salir de la glorieta"],
+      "correctOption": 1,
+      "explanation": "En las glorietas, los vehículos que ya se encuentran dentro tienen prioridad sobre los que se incorporan."
+    },
+    {
+      "id": 7,
+      "question": "La tasa máxima de alcohol permitida para conductores con permiso B en aire espirado es…",
+      "options": ["0,15 mg/l", "0,25 mg/l", "0,30 mg/l", "0,50 mg/l"],
+      "correctOption": 1,
+      "explanation": "Para conductores no profesionales, el límite es de 0,25 miligramos por litro en aire espirado (0,5 g/l en sangre)."
+    },
+    {
+      "id": 8,
+      "question": "Un semáforo con luz amarilla intermitente indica que…",
+      "options": ["Debe detenerse siempre", "Puede continuar, cediendo el paso si es necesario", "El semáforo está averiado y debe ignorarlo", "Debe acelerar para pasar antes de que se ponga rojo"],
+      "correctOption": 1,
+      "explanation": "La luz amarilla intermitente indica precaución: se puede continuar la marcha respetando la prioridad de los demás usuarios."
+    },
+    {
+      "id": 9,
+      "question": "Antes de cambiar de carril en autopista debe…",
+      "options": ["Señalizar y cambiar rápidamente sin mirar", "Mirar espejos, señalizar y comprobar el ángulo muerto", "Cambiar de carril primero y luego señalizar", "Solo señalizar si hay tráfico"],
+      "correctOption": 1,
+      "explanation": "La maniobra debe prepararse observando los espejos, señalizando con antelación y verificando el ángulo muerto antes de desplazarse lateralmente."
+    },
+    {
+      "id": 10,
+      "question": "Una señal circular azul con una flecha blanca curvada hacia la derecha obliga a…",
+      "options": ["Girar obligatoriamente a la derecha", "Detenerse antes de girar", "Circular a velocidad reducida", "Prohibido girar a la derecha"],
+      "correctOption": 0,
+      "explanation": "Las señales circulares azules son de obligación; en este caso indican dirección obligatoria a la derecha."
+    },
+    {
+      "id": 11,
+      "question": "El cinturón de seguridad es obligatorio…",
+      "options": ["Solo para el conductor", "Para los ocupantes de los asientos delanteros", "Para todos los ocupantes del vehículo salvo excepciones", "Únicamente en carretera"],
+      "correctOption": 2,
+      "explanation": "Todos los ocupantes deben utilizar cinturón, independientemente de su posición, salvo contadas excepciones reglamentarias."
+    },
+    {
+      "id": 12,
+      "question": "Entre la documentación obligatoria que debe portar el conductor se encuentra…",
+      "options": ["Seguro del hogar", "Permiso de circulación del vehículo", "Recibo del impuesto municipal", "Contrato de compra del vehículo"],
+      "correctOption": 1,
+      "explanation": "Es obligatorio llevar el permiso de circulación, el permiso de conducción y la tarjeta ITV si procede."
+    },
+    {
+      "id": 13,
+      "question": "¿Qué distancia de seguridad se recomienda guardar circulando a 120 km/h en condiciones normales?",
+      "options": ["Al menos 1 segundo", "Al menos 2 segundos", "Al menos 3 segundos", "No es necesario mantener distancia"],
+      "correctOption": 1,
+      "explanation": "La regla de los dos segundos ayuda a mantener una distancia de seguridad adecuada para reaccionar ante imprevistos."
+    },
+    {
+      "id": 14,
+      "question": "Ante una señal de STOP debe…",
+      "options": ["Reducir la velocidad sin detenerse", "Detenerse siempre y continuar si es seguro", "Detenerse solo si viene otro vehículo", "Acelerar para despejar la intersección"],
+      "correctOption": 1,
+      "explanation": "La señal de STOP obliga a la detención total y a ceder el paso a los vehículos con prioridad."
+    },
+    {
+      "id": 15,
+      "question": "El aquaplaning se produce cuando…",
+      "options": ["Los frenos están muy calientes", "Los neumáticos pierden contacto con el asfalto por exceso de agua", "Se conduce con baja presión de neumáticos", "Se circula a velocidad reducida"],
+      "correctOption": 1,
+      "explanation": "El aquaplaning aparece cuando se forma una película de agua entre el neumático y la calzada, reduciendo drásticamente el control del vehículo."
+    },
+    {
+      "id": 16,
+      "question": "¿Cuándo puede utilizar un turismo el carril bus-taxi?",
+      "options": ["Siempre que no estorbe", "Solo si hay retenciones", "Únicamente cuando una señal lo autorice o en situaciones excepcionales", "Nunca"],
+      "correctOption": 2,
+      "explanation": "Los carriles reservados solo pueden usarse cuando una señal lo permita o en situaciones excepcionales como atascos por orden de la autoridad."
+    },
+    {
+      "id": 17,
+      "question": "Una señal triangular con niños jugando indica…",
+      "options": ["Zona recreativa obligatoria", "Prohibición de circular", "Peligro por proximidad a una zona escolar", "Vía reservada para peatones"],
+      "correctOption": 2,
+      "explanation": "Advierte de la proximidad de un lugar frecuentado por niños, como un colegio, y obliga a extremar la precaución."
+    },
+    {
+      "id": 18,
+      "question": "Las luces antiniebla delanteras pueden utilizarse…",
+      "options": ["Solo en autopista", "En caso de niebla espesa, lluvia intensa o nieve", "Como sustitutas de las luces de cruce", "Para señalizar una parada"],
+      "correctOption": 1,
+      "explanation": "Las luces antiniebla delanteras son opcionales y se usan para mejorar la visibilidad con niebla, lluvia muy intensa o nieve."
+    },
+    {
+      "id": 19,
+      "question": "Al incorporarse a una autopista por el carril de aceleración debe…",
+      "options": ["Detenerse al final del carril", "Circular despacio hasta encontrar hueco", "Ajustar la velocidad y ceder el paso a los vehículos que circulan por la vía", "Obligar a los vehículos de la autopista a apartarse"],
+      "correctOption": 2,
+      "explanation": "El conductor debe aprovechar el carril de aceleración para adaptarse a la velocidad de la autopista y ceder el paso a los vehículos que ya circulan por ella."
+    },
+    {
+      "id": 20,
+      "question": "Una línea longitudinal continua en el centro de la calzada indica…",
+      "options": ["Prohibido parar", "Prohibido cambiar de carril", "Prohibido adelantar o invadir el sentido contrario", "Carril reversible"],
+      "correctOption": 2,
+      "explanation": "La línea continua impide atravesarla o circular por su izquierda, por lo que no se puede adelantar invadiendo el carril contrario."
+    },
+    {
+      "id": 21,
+      "question": "El chaleco reflectante homologado debe utilizarse…",
+      "options": ["Solo en autopista", "Siempre que se salga del vehículo en vías interurbanas", "Únicamente de noche", "No es obligatorio"],
+      "correctOption": 1,
+      "explanation": "Si se baja del vehículo en una vía interurbana ocupando la calzada o el arcén, es obligatorio ponerse el chaleco reflectante para ser visible."
+    },
+    {
+      "id": 22,
+      "question": "Para adelantar a un ciclista en carretera debe dejar una separación lateral mínima de…",
+      "options": ["0,5 metros", "1 metro", "1,5 metros", "2 metros"],
+      "correctOption": 2,
+      "explanation": "La normativa exige dejar al menos 1,5 metros y, si es posible, ocupar parte o la totalidad del carril contiguo."
+    },
+    {
+      "id": 23,
+      "question": "La señal circular roja con una barra blanca horizontal en el centro significa…",
+      "options": ["Prohibido girar a la izquierda", "Entrada prohibida a todos los vehículos", "Fin de prohibiciones", "Calzada sin salida"],
+      "correctOption": 1,
+      "explanation": "Es una señal de entrada prohibida: impide el acceso de vehículos desde el punto donde está situada."
+    },
+    {
+      "id": 24,
+      "question": "Si durante la marcha se enciende el testigo de temperatura del motor, debe…",
+      "options": ["Continuar hasta el próximo taller", "Detenerse con seguridad y revisar el sistema de refrigeración", "Apagar el climatizador y seguir", "Aumentar la velocidad para enfriar el motor"],
+      "correctOption": 1,
+      "explanation": "El sobrecalentamiento puede causar averías graves. Debe detenerse con seguridad, dejar que el motor se enfríe y comprobar el sistema."
+    },
+    {
+      "id": 25,
+      "question": "La velocidad adecuada o adaptada es…",
+      "options": ["La máxima que permite la vía", "La que garantiza llegar antes", "La que permite controlar el vehículo según las condiciones de la vía", "La que marcan los demás usuarios"],
+      "correctOption": 2,
+      "explanation": "Circular a velocidad adaptada implica ajustar la marcha a las condiciones de la vía, tráfico, meteorología y estado del vehículo."
+    },
+    {
+      "id": 26,
+      "question": "Ante un accidente leve sin heridos debe…",
+      "options": ["Abandonar el lugar inmediatamente", "Señalizar, apartar el vehículo si es posible y rellenar parte amistoso", "Esperar siempre a la policía", "Discutir con el otro conductor"],
+      "correctOption": 1,
+      "explanation": "Tras señalizar con los triángulos o luces de emergencia, conviene retirar los vehículos que obstaculicen y completar un parte amistoso si procede."
+    },
+    {
+      "id": 27,
+      "question": "Al descender un puerto de montaña prolongado debe…",
+      "options": ["Circular en punto muerto", "Usar marchas cortas para aprovechar el freno motor", "Frenar continuamente con el pedal", "Detenerse en mitad del carril"],
+      "correctOption": 1,
+      "explanation": "Utilizar una marcha corta ayuda a mantener el control y evita el sobrecalentamiento de los frenos."
+    },
+    {
+      "id": 28,
+      "question": "En una pendiente ascendente con bordillo, si estaciona el vehículo debe…",
+      "options": ["Girar las ruedas hacia el bordillo", "Girar las ruedas hacia el lado contrario al bordillo", "Dejar las ruedas rectas", "No utilizar el freno de mano"],
+      "correctOption": 1,
+      "explanation": "En subida, conviene girar las ruedas hacia el exterior de la calzada para que el vehículo no invada la calzada si se mueve."
+    },
+    {
+      "id": 29,
+      "question": "Antes de iniciar un viaje largo es recomendable…",
+      "options": ["Viajar siempre de noche", "No comer para no sentirse pesado", "Revisar niveles, neumáticos y planificar descansos", "Circular con el depósito en reserva"],
+      "correctOption": 2,
+      "explanation": "Un viaje seguro requiere comprobar el estado del vehículo, programar descansos y llevar la documentación y equipamiento necesarios."
+    },
+    {
+      "id": 30,
+      "question": "¿Cuándo debe colocarse el triángulo de preseñalización de peligro?",
+      "options": ["Solo de noche", "Cuando el vehículo queda inmovilizado en la calzada o arcén", "Únicamente si el vehículo está en autopista", "Nunca es obligatorio"],
+      "correctOption": 1,
+      "explanation": "Si el vehículo queda detenido en la calzada o arcén en vías interurbanas, debe señalizarse con los triángulos (o luces V16 homologadas)."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoApp - Test Permiso B</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <h1>AutoApp</h1>
+        <p class="subtitle">Simulador de test para el permiso B</p>
+      </header>
+
+      <section class="config-panel" aria-labelledby="config-title">
+        <h2 id="config-title">Selecciona un pack de preguntas</h2>
+        <p>
+          Cada test contiene 30 preguntas. Necesitas acertar al menos 3 para
+          aprobar este MVP.
+        </p>
+        <div class="config-form">
+          <label for="packSelector" class="config-label">Pack disponible</label>
+          <select id="packSelector" class="config-input"></select>
+          <button id="startButton" class="primary-button">Comenzar test</button>
+        </div>
+        <p id="packDescription" class="muted-text"></p>
+        <p id="configError" class="feedback" role="alert" aria-live="polite"></p>
+      </section>
+
+      <section id="testSection" class="test-section hidden" aria-live="polite">
+        <div class="test-status">
+          <p id="packTitle" class="status-text"></p>
+          <p id="questionCounter" class="status-text"></p>
+          <p id="scoreTracker" class="status-text"></p>
+        </div>
+        <article class="question-card">
+          <h2 id="questionText" class="question-text"></h2>
+          <form id="optionsForm" class="options-list"></form>
+        </article>
+        <p id="questionFeedback" class="feedback" role="alert" aria-live="polite"></p>
+        <div class="controls">
+          <button id="previousButton" class="secondary-button">Anterior</button>
+          <button id="nextButton" class="primary-button">Siguiente</button>
+        </div>
+      </section>
+
+      <section id="resultsSection" class="results-section hidden" aria-live="polite">
+        <h2>Resultados</h2>
+        <p id="resultsSummary"></p>
+        <p id="resultsStatus" class="results-status"></p>
+        <details class="results-details">
+          <summary>Ver detalle pregunta a pregunta</summary>
+          <ol id="resultsList" class="results-list"></ol>
+        </details>
+        <div class="results-actions">
+          <button id="restartButton" class="secondary-button">Volver a intentar</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <small>AutoApp &mdash; MVP de simulador de autoescuela</small>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
